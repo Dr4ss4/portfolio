@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="n.js">
+    <title>Andressa</title>
+</head>
+
+<body>
+    <nav class="navegar">
+        <h1 class="port">Portfolio <span class="ponto">.</span></h1>
+        <ul class="navitens">
+            <li><a class="link" href="#home">Home</a></li>
+            <li><a class="link" href="#projeto-princ">Projetos Principais</a></li>
+            <li><a class="link" href="#projeto">Projetos</a></li>
+            <li><a class="link" href="#fale-comigo">Fale Comigo</a></li>
+        </ul>
+    </nav>
+
+    <div class="home" id="home">
+        <div class="welcome">
+            <div class="content">
+                <span class="saudacao">Olá, Bem-Vindo</span>
+                <h1 class="meu-nome">Andressa <span class="texto" id="texto">Melo</span></h1>
+                <p class="descrição">Meu nome é Andressa, sou desenvolvedora junior, com destaque
+                    para as linguagens
+                    <span>HTLML, CSS, JavaScript e C#</span>. Nessa página você poderá conhecer um pouco de mim e do meu
+                    trabalho, além de encontrar links para entrarmos em contato!
+                </p>
+                <div class="contato-btn">
+                    <button> <a
+                            href="https://wa.me/5585985437981?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20voc%C3%AA">Entrar
+                            em Contato</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="imagem-home">
+            <img class="img-home-andressa" src="./img/andressa-home.png" alt="Andressa">
+        </div>
+    </div>
+
+    <div class="projetos">
+        <h1 class="projeto-title">Projetos <span>Principais</span></h1>
+
+        <div class="meus-cards" id="projeto-princ">
+            <div class="card">
+                <img src="./img/login-removebg-preview.png" alt="login-imagem">
+                <h3>Log<span>in</span></h3>
+                <p>Um projeto de login é uma parte fundamental em sistemas digitais, fornecendo acesso seguro e
+                    controlado aos usuários.</p>
+                <a href="https://dr4ss4.github.io/Login/">Ver Projeto</a>
+            </div>
+
+            <div class="card">
+                <img src="./img/previsao do tempo.png" alt="">
+                <h3>Previsão do <span>Tempo</span> </h3>
+                <p>Aplicação criada para ver a previsão do tempo em cidades, transformando a maneira como enfrentamos as
+                    incertezas climáticas urbanas.</p>
+                <a href="https://dr4ss4.github.io/previsao-do-tempo/">Ver Projeto</a>
+            </div>
+
+            <div class="card">
+                <img src="img/Picsart_23-12-29_18-40-12-959.png" alt="">
+                <h3>Jo<span>go</span></h3>
+                <p>Desafie sua destreza e velocidade enquanto você ajuda Isaac Newton a desviar de obstáculos e
+                    alcançar
+                    as
+                    deliciosas maçãs.</p>
+                <a href="">Ver Projeto</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="projetos secundarios">
+        <div class="projeto-title" id="projeto">
+            <h1>Pro<span>jetos</span></h1>
+        </div>
+
+        <div class="meus-cards">
+            <div class="card">
+                <img src="./img/calculadora-func.png" alt="calculadora-img">
+                <h3>Calculadora de <span>Salário</span></h3>
+                <p>Nosso site oferece uma calculadora de valor para funcionários, permitindo que você compreenda o
+                    verdadeiro valor do seu trabalho e das suas contribuições para a empresa.</p>
+                <a href="https://dr4ss4.github.io/Calculo-Salarial/">Ver Projeto</a>
+            </div>
+        </div>
+
+    </div>
+    <section class="final-contatos" id="fale-comigo">
+
+        <div class="tittle-contatos">
+            <h3>Andressa <span>Melo</span></h3>
+            <p>Para mais <span>informações</span></p>
+        </div>
+
+        <div class="logos">
+            <a
+                href="https://wa.me/5585985437981?text=Ol%C3%A1!%20Tudo%20bem%3F%20Gostaria%20de%20Conversar%20com%20voc%C3%AA!">
+                <img src="./img/wpp-removebg-preview.png" alt="whatsapp">
+            </a>
+            <a
+                href="mailto:andressaoliveirapr03@gmail.com?subject=Entrar%20em%20contato&body=Ol%C3%A1%3F%20Tudo%20bem%3F%20Gostaria%20de%20falar%20com%20voc%C3%AA">
+                <img src="./img/gmail.png" alt="gmail-img">
+            </a>
+            <a href="https://www.linkedin.com/in/andressa-oliveira-desenvolvedora-junior/">
+                <img src="./img/linkedin (2).png" alt="linkedin-img">
+            </a>
+            <a href="https://github.com/Dr4ss4">
+                <img src="img/github.png" alt="github-img">
+            </a>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#texto', {
+            strings: ['Melo', 'Dev-Junior'],
+            loop: true,
+            typeSpeed: 50,
+            backSpeed: 80,
+            backDelay: 1500
+        });
+    </script>
+
+</html>

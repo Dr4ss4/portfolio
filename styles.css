@@ -1,0 +1,396 @@
+/*zerando as margins e o espaço de dentro da pagina*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.port {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.ponto {
+    color: #7f00ff;
+    font-size: 50px;
+}
+/*Menu*/
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 24px;
+    z-index: 1000;
+}
+
+.navegar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+}
+
+.navitens {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navitens li {
+    display: inline;
+}
+
+.navitens li a {
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px 15px;
+    color: #3d535f;
+    text-decoration: none;
+}
+
+.navitens li:hover a {
+    color: #7f00ff;
+    transform: scale(1.1);
+}
+
+/*Bloco principal de boas vindas*/
+.home {
+    display: flex;
+    width: 100vw;
+    height: 630px;
+}
+
+.welcome {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.content {
+    display: flex;
+    padding-left: 5%;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 320px;
+}
+
+.saudacao {
+    display: block;
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+
+.saudacao::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 5px;
+    background-color: #7f00ff;
+}
+
+.meu-nome {
+    width: 110%;
+    display: block;
+    font-size: 70px;
+    font-weight: 800;
+    color: #3d535f;
+}
+
+.texto {
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+
+p {
+    text-align: justify;
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+}
+
+p span {
+    color: #7f00ff;
+    font-weight: bold;
+}
+
+.contato-btn {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.contato-btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.home button {
+    flex-wrap: wrap;
+    width: 300px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 8px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background-color: #7f00ff;
+}
+
+.imagem-home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    margin-top: 45px;
+}
+
+.img-home-andressa {
+    width: 410px;
+    height: 440px;
+    margin-right: 10px;
+    padding: 10;
+    transition: transform 5s ease;
+    animation: floatAnimation 3s infinite alternate ease-in-out;
+}
+
+/*Projetos principais*/
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.projetos .projeto-title {
+    color: #3d535f;
+    display: flex;
+    margin-left: 2%;
+
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projetos.projeto-title span {
+    color: #7f00ff;
+}
+
+.meus-cards {
+    width: 100%;
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    gap: 20px;
+    
+    padding: 30px;
+}
+
+.meus-cards .card {
+    width: 300px;
+    height: 400px;
+    max-width: 300px;
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    background-color: #fff;
+    position: relative;
+    
+    transition: transform 2s ease;
+    animation: floatAnimation 3s infinite alternate ease-in-out;
+}
+
+
+.secundarios .meus-cards {
+    justify-content: flex-start;
+
+}
+
+.secundarios .meus-cards .card{
+    margin-left: 4.5%;
+}
+
+.meus-cards span {
+    color: #7f00ff;
+}
+
+.meus-cards img{
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+.meus-cards button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 8px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.4);
+    margin-top: 15px;
+}
+
+.meus-cards button:hover {
+    background-color: #7f00ff;
+}
+
+.meus-cards img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.meus-cards h3 {
+    color: #3d535f;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.meus-cards p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.meus-cards a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.meus-cards a:hover {
+    background-color: #7f00ff;
+}
+
+/*aqui*/
+
+
+.final-contatos{
+    width: 100%;
+    background-color: #f0f0f0;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+}
+
+.tittle-contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #3d535f;
+    margin-top: 50px;
+    padding-top: 60px;
+}
+
+.tittle-contatos h3{
+    text-align: center;
+}
+
+.tittle-contatos h3 span{
+    color: #7f00ff;
+}
+
+.tittle-contatos p{
+    text-align: center;
+    margin-top: 3px;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+}
+
+.logos img {
+    margin-top: 15px;
+    margin: 5pxs;
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+    padding-bottom: 40px;
+}
+
+.logos :hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .imagem-home {
+      display: none;
+    }
+    
+    .navegar{
+        display: none;
+    }
+
+    .meu-nome {
+        font-size: 60px;
+    }
+    
+    .secundarios .meus-cards {
+        justify-content: space-around;
+    
+    }
+    
+    .secundarios .meus-cards .card{
+        margin-left: 0;
+    }
+    
+    
+}
